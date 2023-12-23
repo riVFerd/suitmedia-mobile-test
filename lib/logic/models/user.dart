@@ -6,6 +6,7 @@ class User {
   final String firstName;
   final String lastName;
   final String avatar;
+  static int totalUsers = 999;
   static final _dio = Dio(
     BaseOptions(
       baseUrl: 'https://reqres.in/api',
@@ -44,6 +45,7 @@ class User {
     try {
       final response = await _dio.get('/users?page=$page&per_page=$pageSize');
       final data = response.data['data'] as List;
+      totalUsers = response.data['total'];
       final users = data.map((e) => User.fromJson(e)).toList();
       return users;
     } on DioException {

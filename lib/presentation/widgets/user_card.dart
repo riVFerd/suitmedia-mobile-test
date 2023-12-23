@@ -13,18 +13,25 @@ class UserCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(50),
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      decoration: const BoxDecoration(
+        border: Border(
+          bottom: BorderSide(
+            color: Colors.grey,
+            width: 0.2,
+          ),
         ),
-        clipBehavior: Clip.hardEdge,
-        margin: const EdgeInsets.only(right: 8),
-        child: Image.network(user.avatar),
       ),
-      title: Text('${user.firstName} ${user.lastName}'),
-      subtitle: Text(user.email),
-      onTap: onTap,
+      child: ListTile(
+        leading: CircleAvatar(
+          radius: 46, // Adjust the radius as needed
+          backgroundImage: NetworkImage(user.avatar),
+        ),
+        title: Text('${user.firstName} ${user.lastName}'),
+        subtitle: Text(user.email),
+        onTap: onTap,
+      ),
     );
   }
 }
