@@ -47,7 +47,11 @@ class FirstScreen extends StatelessWidget {
       );
       return;
     }
-    Navigator.pushNamed(context, SecondScreen.routeName);
+    Navigator.pushNamed(
+      context,
+      SecondScreen.routeName,
+      arguments: name,
+    );
   }
 
   @override

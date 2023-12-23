@@ -19,7 +19,7 @@ class CustomElevatedButton extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: ThemeConstants.primaryColor,
+          backgroundColor: ThemeConstants.primaryBlue,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
           ),
