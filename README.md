@@ -1,16 +1,15 @@
-# flutter_suitmedia
+# Suitmedia Mobile Test
 
-A new Flutter project.
+A Flutter project for Suitmedia Mobile Developer Internship Test
 
-## Getting Started
+## Download
 
-This project is a starting point for a Flutter application.
+You can download the APK file from [here](https://github.com/riVFerd/suitmedia-mobile-test/releases/download/v1.0.0/app-release.apk).
 
-A few resources to get you started if this is your first Flutter project:
+## Demo
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### First Screen
+![First Screen](./assets/demo/mobile-suitmedia_1.gif)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Second & Third Screen
+![Second Screen](./assets/demo/mobile-suitmedia_2.gif)
